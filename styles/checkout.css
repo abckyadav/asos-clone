@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f2f2f2;
 }
 .navbar {
   display: flex;
@@ -91,6 +90,6 @@ button {
   border: 5px solid blue;
   flex: 2;
 }
-#payment{
+#payment {
   display: none;
 }
