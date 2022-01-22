@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/signup.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./index.html"
+        ><img src="./images/asos-logo-black.svg" alt=""
+      /></a>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="headingbtn">
+          <button><a href="./signup.html">JOIN</a></button>
+          <button><a href="./signin.html">SIGN IN</a></button>
+        </div>
+
+        <div class="signupwith">
+          <h2>SIGN UP WITH...</h2>
+
+          <div class="social">
+            <div>
+              <img src="./images/google.svg" alt="" />
+              <p>GOOGLE</p>
+            </div>
+
+            <div>
+              <img src="./images/apple.svg" alt="" />
+              <p>APPLE</p>
+            </div>
+
+            <div>
+              <img src="./images/fb big.png" alt="" />
+              <p>FACEBOOK</p>
+            </div>
+          </div>
+
+          <p>
+            Signing up with social is super quick. No extra passwords to
+            remember - no brain fail. Don't worry, we'd never share any of your
+            data or post anything on your behalf #notevil
+          </p>
+        </div>
+
+        <div class="signemail">
+          <h2>OR SIGN UP WITH EMAIL</h2>
+          <div class="input">
+            <label>FULL NAME:</label>
+            <input type="name" id="name" placeholder="Name" required />
+
+            <label>EMAIL :</label>
+            <input type="email" id="email" placeholder="Email" required />
+
+            <label>USERNAME :</label>
+            <input type="text" id="username" placeholder="username" required />
+
+            <label>PASSWORD :</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="password"
+              required
+            />
+
+            <label>MOBILE :</label>
+            <input type="number" id="mobile" placeholder="mobile" required />
+
+            <label>DESCRIPTION :</label>
+            <input
+              type="text"
+              id="description"
+              placeholder="description"
+              required
+            />
+
+            <button
+              type="submit"
+              class="btn"
+              id="singupbtn"
+              onclick="Register(event)"
+            >
+              JOIN ASOS
+            </button>
+          </div>
+          <p id="error"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/signup.js"></script>

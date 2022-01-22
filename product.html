@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mens</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/product.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+
+    <!-- new -->
+    <script src="https://use.fontawesome.com/61bdc76d1c.js"></script>
+  </head>
+  <body>
+    <header id="navigation"></header>
+
+    <div class="container">
+      <div class="heading">
+        <div class="men-shirt">
+          <h2>Men's Shirts</h2>
+          <p>
+            From work to play, our collection of men's shirts covers all bases.
+            Shop ASOS DESIGN for everything from dress shirts for your 9-5 to
+            plaid button-down shirts for your go-to everyday. Browse iconic
+            designer shirts for men from Polo Ralph Lauren, with check patterns,
+            preppy hues and logo details. Or, if you're looking to stay ahead of
+            trends, express your unique style with denim, cord and soft-cotton
+            styles from New Look. Explore our full range of men's shirts:
+            whatever your style, we've got a shirt for it.
+          </p>
+        </div>
+      </div>
+
+      <div class="sorting-buttons">
+        <ul>
+          <li>DENIM SHIRTS</li>
+          <li>CHECK SHIRTS</li>
+          <li>PRINTED SHIRTS</li>
+          <li>STRIPE SHIRTS</li>
+          <li>PLAIN SHIRTS</li>
+          <li>OXFORD SHIRTS</li>
+          <li>SMART SHIRTS</li>
+          <li>VIEW MORE...</li>
+        </ul>
+      </div>
+
+      <div id="sort_select">
+
+        <div>
+        <select onchange="getPrice()" id="selectPrice">
+          <option value="">Sort by Price</option>
+          <option value="lowtohigh">Low to High</option>
+          <option value="hightolow">High to Low</option>
+        </select>
+      </div>
+
+      <div>
+        <select onchange="getBrand()" id="selectBrand">
+          <option value="">Sort by Brand</option>
+          <option value="Asos">Asos</option>
+          <option value="Adidas">Adidas</option>
+          <option value="Bershka">Bershka</option>
+          <option value="River Island">River Island"</option>
+          <option value="Tommy Hilfiger">Tommy Hilfiger</option>
+          <option value="Vintage">Vintage</option>
+        </select>
+      </div>
+
+      <div>
+        <select onchange="getColor()" id="selectColor">
+          <option value="">Sort by Color</option>
+          <option value="White">White</option>
+          <option value="Pink">Pink</option>
+          <option value="Navy">Navy</option>
+          <option value="Black">Black</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Grey">Grey</option>
+      
+        </select>
+      </div>
+
+      <div>
+        <select onchange="getDiscount()" id="selectDiscount">
+          <option value="">Sort by Discount</option>
+          <option value="25% off">25% off</option>
+          <option value="50% off">50% off</option>
+          <option value="75% off">75% off</option>
+          
+        </select>
+      </div>
+    </div>
+
+    <div class="products-container"></div>
+
+    <div id="footer-container"></div>
+  </body>
+</html>
+
+<!-- navbar and footer -->
+<script type="module">
+  import { navbar, footer } from "./components/navbar.js";
+
+  let navigation = document.getElementById("navigation");
+  navigation.innerHTML = navbar();
+
+  let footer_container = document.getElementById("footer-container");
+  footer_container.innerHTML = footer();
+</script>
+
+<script src="./scripts/product.js"></script>

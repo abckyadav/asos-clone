@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+.heading {
+  background-color: #f8f8f8;
+  padding: 15px;
+}
+.men-shirt {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.men-shirt > h2 {
+  line-height: 2em;
+}
+.men-shirt > p {
+  line-height: 1.5em;
+  font-size: 15px;
+}
+.sorting-buttons {
+  /* border: 1px solid red; */
+  padding: 10px 8%;
+}
+.sorting-buttons ul li {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+  line-height: 12px;
+  border-radius: 15px;
+  padding: 9px 15px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.sorting-buttons ul li:hover {
+  background-color: #d2d2d2;
+}
+
+.products-container {
+  /* border: 1px solid red; */
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  gap: 1.3%;
+  margin: 2% auto;
+  height: 100%;
+  padding-bottom: 13%;
+}
+
+.textdiv {
+  /* height: 500px; */
+  height: 100%;
+}
+.imagediv {
+  width: 100%;
+  height: 400px;
+}
+.imagediv img {
+  width: 100%;
+  height: 100%;
+}
+.textdiv p {
+  color: gray;
+  font-size: 15px;
+  margin: 10px auto;
+}
+.pricediv {
+  /* border: 1px solid green; */
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  margin-top: 1%;
+  /* margin-bottom: 0%; */
+}
+
+#sort_select {
+  background-color: #eeeeee;
+  display: flex;
+  padding: 1%;
+  justify-content: space-around;
+}
+#sort_select select {
+  background-color: transparent;
+  padding: 5%;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+.maindiv {
+  /* border: 1px solid red; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.maindiv:hover {
+  transform: scale(1.05);
+  transition: 0.2s all ease-in;
+}

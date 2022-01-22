@@ -1,0 +1,59 @@
+#container-div {
+  /* border: 1px solid red; */
+  min-height: 500px;
+  padding: 5%;
+}
+/* inside main box */
+#content {
+  /* border: 1px solid blue; */
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 5%;
+}
+#imagediv {
+  /* border: 1px solid red; */
+
+  flex: 1.5;
+}
+#imagediv img {
+  width: 100%;
+  height: 100%;
+}
+#detailsdiv {
+  /* border: 5px solid green; */
+  flex: 1;
+  padding: 2%;
+  line-height: 30px;
+}
+#btn {
+  width: 300px;
+  padding: 2%;
+  background-color: green;
+  color: white;
+  margin: 5% 0;
+  cursor: pointer;
+}
+
+#textdetails > p:first-child {
+  font-size: 20px;
+  color: rgb(70, 68, 68);
+  line-height: 25px;
+}
+.text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.text > span {
+  font-weight: 500;
+  /* color: red; */
+}
+#disprice {
+  font-weight: bold;
+  color: rgb(170, 24, 24);
+  font-size: 18px;
+  line-height: 50px;
+}

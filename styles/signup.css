@@ -1,0 +1,122 @@
+body {
+  background-color: #eeeeee;
+}
+.navbar {
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  /* border: 1px solid red; */
+  background-color: white;
+  width: 50%;
+  margin: auto;
+}
+.content {
+  padding: 20px;
+}
+.container div {
+  background-color: white;
+}
+.headingbtn a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.headingbtn {
+  display: flex;
+  gap: 1%;
+}
+.headingbtn button {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 255, 0.623);
+  border-right: 1px solid grey;
+  padding: 20px;
+  background-color: transparent;
+  width: 50%;
+}
+.signupwith {
+  text-align: center;
+}
+.signupwith > p {
+  color: grey;
+}
+.social {
+  /* border: 1px solid rgb(49, 23, 122); */
+  display: flex;
+  justify-content: space-between;
+}
+.social div {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  display: flex;
+  width: 30%;
+  gap: 5%;
+  cursor: pointer;
+}
+.social img,
+.socialsignin img {
+  width: 30px;
+  padding: 10px;
+}
+.signemail {
+  /* border: 1px solid black; */
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+}
+.input {
+  /* border: 1px solid red; */
+  /* width: 100%; */
+  margin: 25px auto;
+  text-align: left;
+}
+.input label {
+  font-weight: 700;
+}
+.input input {
+  /* border: 1px solid red; */
+
+  padding: 4%;
+  width: 90%;
+  margin: 4% 0 10% 0;
+}
+#error,
+#success {
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
+}
+.btn {
+  color: white;
+  background-color: #2d2d2d;
+  width: 100%;
+  padding: 15px;
+}
+/* SIGNIN PAGE CSS */
+.signinwith {
+  margin-top: 50px;
+}
+.loginemail {
+  margin-top: 50px;
+}
+.input p {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+  color: gray;
+}
+.socialsignin {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+}
+.socialsignin div {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.socialsignin div div {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  cursor: pointer;
+  width: 49%;
+  margin-left: 10px;
+}

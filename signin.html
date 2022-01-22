@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/signup.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./index.html"
+        ><img src="./images/asos-logo-black.svg" alt=""
+      /></a>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="headingbtn">
+          <button><a href="./signup.html">JOIN</a></button>
+          <button><a href="./signin.html">SIGN IN</a></button>
+        </div>
+
+        <div class="signemail loginemail">
+          <div class="input">
+            <p id="success"></p>
+            <label>USERNAME :</label>
+            <input type="text" id="username-login" placeholder="username" />
+
+            <label>PASSWORD :</label>
+            <input type="password" id="password-login" placeholder="password" />
+            <button
+              type="submit"
+              class="btn"
+              id="loginbtn"
+              onclick="login(event)"
+            >
+              SIGN IN
+            </button>
+            <p>forgot password?</p>
+
+            <p id="error"></p>
+          </div>
+        </div>
+
+        <div class="signupwith signinwith">
+          <h2>SIGN IN WITH...</h2>
+
+          <div class="socialsignin">
+            <div>
+              <div>
+                <img src="./images/google.svg" alt="" />
+                <p>GOOGLE</p>
+              </div>
+
+              <div>
+                <img src="./images/apple.svg" alt="" />
+                <p>APPLE</p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <img src="./images/fb big.png" alt="" />
+                <p>FACEBOOK</p>
+              </div>
+
+              <div>
+                <img src="./images/twitter.svg" alt="" />
+                <p>TWITTER</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/signup.js"></script>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/bag.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+  </head>
+  <body>
+    <header id="navigation"></header>
+
+    <div id="maincontainer">
+      <div id="ifempty"></div>
+      <div class="maindiv" id="maindiv">
+        <div id="leftmain">
+
+        <div id="mybaghead">
+          <h3 id="itemslength"></h3>
+          <p>Items are reserved for 60 minutes</p>
+        </div>
+
+        <div id="productdisplay"></div>
+      
+
+      <div id="subtotaldiv">
+        <!-- <p id="subtotal">SUB TOTAL - PRICE</p> -->
+      </div>
+      </div>
+
+      <div id="rightmain">
+        <div>
+          <h3>TOTAL</h3>
+        </div>
+        <div>
+          <p id="subtotal"></p>
+          <p>Delhivery <span>Free</span>
+          </p>
+
+          <button id="checkout">CHECKOUT</button>
+        </div>
+
+        <div>
+          <h5>WE ACCEPT:</h5>
+          <div>
+            <img src="./images/visa-png.webp" alt="" />
+            <img src="./images/mastercard-png.webp" alt="" />
+            <img src="./images/pay-pal-png.webp" alt="" />
+            <img src="./images/american-express-png.webp" alt="" />
+            <img src="./images/visa-electron-png.webp" alt="" />
+          </div>
+          <p >Got a discount code? Add it in the next step.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="footer-container"></div>
+  </body>
+</html>
+<script src="./scripts/bag.js"></script>
+<script type="module">
+  import { navbar, footer } from "./components/navbar.js";
+
+  let navigation = document.getElementById("navigation");
+  navigation.innerHTML = navbar();
+
+  let footer_container = document.getElementById("footer-container");
+  footer_container.innerHTML = footer();
+</script>

@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 1%;
+  font-family: sans-serif;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  margin: 0 15%;
+}
+.logo {
+  padding: 10px;
+}
+.digi img {
+  width: 60%;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  gap: 5%;
+}
+
+.leftdiv {
+  width: 50%;
+  margin: 5% auto;
+  row-gap: 50px;
+}
+.country,
+.email {
+  border: 1px solid rgba(128, 128, 128, 0.329);
+  padding: 2%;
+  line-height: 40px;
+  margin: 3% 0;
+}
+.country img {
+  width: 30px;
+  margin-top: 50%;
+}
+.imgselect {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+#selectcity {
+  padding: 3%;
+  width: 300px;
+}
+.address,
+.payment {
+  border: 1px solid rgba(128, 128, 128, 0.329);
+  padding: 2%;
+  line-height: 30px;
+  margin: 5% 0;
+}
+
+.input {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.input input {
+  border: 1px solid rgba(128, 128, 128, 0.329);
+
+  padding: 4%;
+  width: 300px;
+  margin-bottom: 8%;
+}
+button {
+  color: white;
+  background-color: black;
+  padding: 5%;
+  width: 300px;
+  cursor: pointer;
+}
+.payment-select select {
+  padding: 4%;
+  margin-bottom: 20px;
+}
+.payment button {
+  background-color: green;
+}
+
+.rightdiv {
+  border: 5px solid blue;
+  flex: 2;
+}
+#payment{
+  display: none;
+}

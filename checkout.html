@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/checkout.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/asos-logo-black.svg" alt=""
+        /></a>
+      </div>
+      <div class="checkout">
+        <h1>CHECKOUT</h1>
+      </div>
+      <div class="digi">
+        <img src="./images/digicart.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="leftdiv">
+        <div class="country">
+          <h3>DELIVERY CITY:</h3>
+
+          <div class="imgselect">
+            <div>
+              <img src="./images/india.png" alt="" />
+            </div>
+            <div>
+              <select name="selectcity" id="selectcity">
+                <option value="">Select City</option>
+                <option value="">Ahmedabad</option>
+                <option value="">Amritsar</option>
+                <option value="">Assam</option>
+                <option value="">Bengaluru</option>
+                <option value="">Bubhneswar</option>
+                <option value="">Chandigarh</option>
+                <option value="">Chennai</option>
+                <option value="">Cochin</option>
+                <option value="">Coimbatore</option>
+                <option value="">Durgapur</option>
+                <option value="">Gaziabad</option>
+                <option value="">Gurugram</option>
+                <option value="">Hyderabad</option>
+                <option value="">Indore</option>
+                <option value="">Jalandhar</option>
+                <option value="">Kolkata</option>
+                <option value="">Kozikhode</option>
+                <option value="">Latur</option>
+                <option value="">Lucknow</option>
+                <option value="">Mangglore</option>
+                <option value="">Meerut</option>
+                <option value="">Mumbai</option>
+                <option value="">Nai Mumbai</option>
+                <option value="">New Delhi</option>
+                <option value="">Noida</option>
+                <option value="">Panvel</option>
+                <option value="">Pune</option>
+                <option value="">Punjab</option>
+                <option value="">Raipur</option>
+                <option value="">Siliguri</option>
+                <option value="">Thane</option>
+                <option value="">Vadodra</option>
+                <option value="">Varanasi</option>
+                <option value="">Vishakapatnam</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="address">
+          <h3>DELIVERY ADDRESS :</h3>
+
+          <h4>ADD ADDRESS :</h4>
+          <div class="input">
+            <form>
+              <label>FIRST NAME :</label>
+              <input required type="text" id="name" />
+
+              <label>LAST NAME :</label>
+              <input required type="text" />
+
+              <label>MOBILE :</label>
+              <input required type="text" />
+
+              <label>ADDRESS :</label>
+              <input required type="text" />
+              <input type="text" placeholder="Optional" />
+
+              <label>CITY :</label>
+              <input required type="text" />
+
+              <label>COUNTRY :</label>
+              <input required type="text" />
+
+              <label>POSTCODE :</label>
+              <input required type="number" />
+
+              <button id="deliverbtn">DELIVER TO THIS ADDRESS</button>
+              <p id="error"></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="payment" id="payment">
+          <h3>PAYMENT TYPE</h3>
+
+          <h3>ADD CREDIT/DEBIT CARD</h3>
+
+          <div class="input">
+            <form>
+              <label>CARD NUMBER :</label>
+              <input required type="number" />
+
+              <label>EXPIRY DATE :</label>
+              <div class="payment-select">
+                <select>
+                  <option value="">Month</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+
+                <select>
+                  <option value="">Year</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+                </select>
+              </div>
+
+              <label>NAME ON CARD</label>
+              <input required type="text" />
+
+              <label>CVV</label>
+              <input required type="number" />
+
+              <button id="placeorder">PLACE ORDER</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  document.getElementById("deliverbtn").addEventListener("click", function (e) {
+    e.preventDefault();
+    var name = document.getElementById("name").value;
+    if (name != "") {
+      document.getElementById("payment").style.display = "block";
+    } else {
+      document.getElementById("error").textContent =
+        "please fill all the fields";
+
+      document.getElementById("error").style.color = "red";
+    }
+  });
+
+  document.getElementById("placeorder").addEventListener("click", function () {
+    var name = document.getElementById("name").value;
+
+    alert(`Thank You ${name} ! for Shopping With Us.
+    Items Will be Delivered Soon`);
+
+    window.location.href = "./index.html";
+  });
+
+  // document.getElementById("deliverbtn").addEventListener("click", function () {
+  //   var naam = document.querySelector("#name").value;
+  //   console.log("naam:", naam);
+  // });
+</script>

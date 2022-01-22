@@ -1,0 +1,148 @@
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+#ifempty {
+  width: 30%;
+  margin: 5% auto;
+  text-align: center;
+  padding: 2% 0;
+}
+#ifempty p {
+  margin: 10%;
+  color: gray;
+}
+
+.maindiv {
+  display: flex;
+  /* border:10px solid yellowgreen; */
+  margin: 5% auto;
+  width: 70%;
+  gap: 2%;
+  background-color: whitesmoke;
+}
+
+#rightmain {
+  /* border:10px solid black; */
+  padding: 2%;
+  background-color: white;
+  flex: 1.1;
+  height: 300px;
+}
+
+#leftmain {
+  /* border: 10px solid black; */
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  flex: 2;
+}
+#mybaghead {
+  /* border: 1px solid purple; */
+
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  background-color: white;
+  margin-bottom: 5%;
+}
+
+#subtotaldiv {
+  /* border: 5px solid purple; */
+  padding: 4%;
+  background-color: white;
+  margin: 5% 0;
+  font-weight: 900;
+  text-align: right;
+}
+#seconddiv {
+  border: 1px solid rgba(128, 128, 128, 0.233);
+  display: flex;
+  margin: auto;
+  background-color: white;
+  padding: 2%;
+  gap: 5%;
+  margin-bottom: 2%;
+}
+
+#imagediv {
+  /* border: 5px solid red; */
+  flex: 1;
+  height: 150px;
+}
+
+#imagediv > img {
+  width: 100%;
+  height: 100%;
+}
+
+#detailsdiv {
+  /* border: 5px solid green; */
+  flex: 2;
+}
+
+#detailsdiv h4 {
+  color: rgb(214, 11, 11);
+}
+#detailsdiv span {
+  color: gray;
+  text-decoration: line-through;
+  font-size: 12px;
+  line-height: 30px;
+}
+#sort > p {
+  line-height: 40px;
+  font-size: 12px;
+}
+#remBtn {
+  border: none;
+  color: red;
+  background-color: transparent;
+  cursor: pointer;
+  float: right;
+}
+#remBtn:hover {
+  color: black;
+  border: 1px solid rgba(128, 128, 128, 0.514);
+}
+
+#rightmain h3 {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+  padding: 5%;
+  margin-bottom: 4%;
+}
+#subtotal {
+  padding: 3%;
+}
+#subtotal span,
+#subtotal + p span {
+  float: right;
+}
+#subtotal + p {
+  padding: 5%;
+}
+#checkout,
+.continuebtn {
+  color: white;
+  background-color: #018849;
+  width: 100%;
+  padding: 3%;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+.continuebtn {
+  width: 90%;
+  margin: 5% auto;
+}
+h5 + div {
+  display: flex;
+  gap: 2%;
+  margin: 2% 0;
+}
+h5 + div img {
+  width: 40px;
+  /* padding: 5px; */
+}
+h5 + div + p {
+  font-size: 12px;
+}
