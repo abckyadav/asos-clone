@@ -15,7 +15,7 @@ const cart_product = (data) => {
         <p>Was £${data.price} <span id="disprice"> &nbsp; Now  £${data.offPrice}</span> (-${data.discount})</p>
 
         <p class="text">COLOUR: <span>${data.color}</span></p>
-        <p class="text">SIZE: <span>${data.size}</span></p>
+        
 
         <button id="btn">ADD TO BAG</button>
       </div>
