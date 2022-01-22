@@ -131,6 +131,6 @@ var register_data;
         successtag.style.color = "green";
 
         setTimeout(function(){
-            window.location.href = "../index.html.html"
+            window.location.href = "../index.html"
           }, 2000);
   }
